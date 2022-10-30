@@ -54,12 +54,10 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Python เบื้องต้น</h2>
-										<p><font size = "5" face = "MNNEasyread">เป็นภาษาที่ง่าย เหมาะแก่ผู้ที่เพิ่งเริ่มต้นการเขียนโปรแกรมเบื้องต้น 
-											โดยข้อมูลทั้งหมดต้องขอขอบคุณ <a href="https://scholar.google.co.th/citations?user=htY3F_IAAAAJ&hl=en">
-												อาจารย์ อนิราช มิ่งขวัญ</a></font>		
+										<h2>Lecture 4  Functions</h2>
+										<p><font size = "5" face = "MNNEasyread">การฝึกฝนไม่ได้ทำให้สมบูรณ์แบบ การฝึกฝนที่สมบูรณ์แบบเท่านั้นที่ทำให้สมบูรณ์แบบ</font>		
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p></p>
 								</div>
 							</section>
 
@@ -68,30 +66,271 @@
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h3>TIIPS AND TRICKS</h3>
+									<p>What You Will Learn
+										<br>-Introduction to Functions
+										<br>-Designing Program Using Functions
+										<br>-Passing Arguments to Functions
+										<br>-Local, Global Variables and Global Constants
+										<br>-Value-Returning Functions
+										<br>-Storing Functions in Modules</p>
+										<h3>FUNCTIONS</h3>
+									
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="images/L5-1.jpg" class="image"><img src="images/L5-1.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Introduction to Functions</h4>
+												<p>A function is a group of statements that exist within a
+													program for the purpose of performing a specific task.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="images/L5-2.jpg" class="image"><img src="images/L5-2.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Introduction to Functions</h4>
+												<p>Functions
+													<br>• A function is a section of reusable code that performs an action.									
+													<br>• A function has a name and is called, or executed, by that name.													
+													<br>• Optionally, functions can accept arguments and return data.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+										<h3>STRING RECAP</h3>
+											<a href="images/L5-3.jpg" class="image"><img src="images/L5-3.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>FUNCTIONS</h4>
+												<p>ตัวอย่างการเขียน Function</p>
 											</div>
 										</article>
+										<article>
+											<a href="images/L5-4.jpg" class="image"><img src="images/L5-4.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>FUNCTIONS NAMES</h4>
+												<p>Function naming rules:
+													<br>• ไม่สามารถใช้คำสำคัญเป็นชื่อฟังก์ชันได้											
+													<br>• ไม่สามารถมีช่องว่าง							
+													<br>• อักขระตัวแรกต้องเป็นตัวอักษรหรือขีดล่าง
+													<br>• อักขระอื่นๆ ทั้งหมดต้องเป็นตัวอักษร ตัวเลข หรือขีดล่าง
+													<br>• อักขระตัวพิมพ์ใหญ่และตัวพิมพ์เล็กต่างกัน</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-5.jpg" class="image"><img src="images/L5-5.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>FUNCTIONS</h4>
+												<p>ใน Python สตริงจะไม่เปลี่ยนรูป ซึ่งหมายความว่าเมื่อสร้างแล้ว
+													ไม่สามารถเปลี่ยนแปลงได้ การดำเนินการบางอย่าง เช่น การต่อกัน ให้
+													รู้สึกว่าพวกเขาแก้ไขสตริง แต่ในความเป็นจริงพวกเขาไม่ได้</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-6.jpg" class="image"><img src="images/L5-6.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>BENEFITS OF MODULARISING A PROGRAM WITH FUNCTIONS</h4>
+												<p><br>• รหัสที่ง่ายกว่า: เข้าใจง่ายขึ้นเมื่อแบ่งออกเป็นฟังก์ชัน
+													<br>• Code Reuse: เขียนครั้งเดียวเพื่อดำเนินการนั้นแล้วดำเนินการใดๆ
+													เวลาที่จำเป็น
+													<br>• การทดสอบที่ดีขึ้น: สามารถทดสอบแต่ละฟังก์ชันในโปรแกรมทีละรายการ แก้ไขข้อผิดพลาดได้ง่ายขึ้น
+													<br>• การพัฒนาที่เร็วขึ้น: สามารถรวมไลบรารีของฟังก์ชันในแต่ละโปรแกรมได้
+													ที่ต้องการพวกเขา
+													<br>• อำนวยความสะดวกในการทำงานเป็นทีมได้ง่ายขึ้น : โปรแกรมเมอร์ต่างๆ สามารถมอบหมายงานได้
+													ในการเขียนหน้าที่ต่างๆ</p>
+											</div>
+										</article>
+										<article>
+											<h4>Designing Program Using Functions</h4>
+											<a href="images/L5-7.jpg" class="image"><img src="images/L5-7.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>FUNCTIONS</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-8.jpg" class="image"><img src="images/L5-8.jpg" alt="" /></a>
+											<div class="inner">
+												<h4> </h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-9.jpg" class="image"><img src="images/L5-9.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Passing Arguments to Functions</h4>
+												<p>A local variable is created inside a function and cannot be
+													accessed by statements that are outside the function. Different
+													functions can have local variables with the same names because
+													the functions cannot see each other's local variables.</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-10.jpg" class="image"><img src="images/L5-10.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>LOCAL VARIABLES</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-11.jpg" class="image"><img src="images/L5-11.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>PASSING ARGUMENTS</h4>
+												<p>An argument is any piece of data that is passed into a function
+													when the function is called. A parameter is a variable that receives
+													an argument that is passed into a function.</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-12.jpg" class="image"><img src="images/L5-12.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>PASSING ARGUMENTS</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L5-13.jpg" class="image"><img src="images/L5-13.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>PASSING ARGUMENTS</h4>
+												<p> </p>
+											</div>
+									</article>
+									<article>
+										<a href="images/L5-14.jpg" class="image"><img src="images/L5-14.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>PASSING ARGUMENTS</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<h4>Local, Global Variables and Global Constants</h4>
+										<a href="images/L5-15.jpg" class="image"><img src="images/L5-15.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Global Variables and Global Constants</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-16.jpg" class="image"><img src="images/L5-16.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Value-Returning Functions</h4>
+											<p>A value-returning function has a return statement that returns a
+												value back to the part of the program that called it.</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-17.jpg" class="image"><img src="images/L5-17.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>VALUE-RETURNING FUNCTIONS</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-18.jpg" class="image"><img src="images/L5-18.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>IPO AND FUNCTION</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-19.jpg" class="image"><img src="images/L5-19.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>VALUE-RETURNING FUNCTIONS</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-20.jpg" class="image"><img src="images/L5-20.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>VALUE-RETURNING FUNCTIONS()</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-21.jpg" class="image"><img src="images/L5-21.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Storing Functions in Modules</h4>
+											<p>A module is a file that contains Python code. Large programs are
+												easier to debug and maintain when they are divided into modules.</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-22.jpg" class="image"><img src="images/L5-22.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>STORING FUNCTIONS IN MODULES</h4>
+											<p></p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-23.jpg" class="image"><img src="images/L5-23.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>USING MODULES</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-24.jpg" class="image"><img src="images/L5-24.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>USING MODULES</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<h4>BASIC STRING METHODS</h4>
+										<a href="images/L5-25.jpg" class="image"><img src="images/L5-25.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>RUN</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-26.jpg" class="image"><img src="images/L5-26.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>RECURSIVE</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-27.jpg" class="image"><img src="images/L5-27.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Python common functions</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-28.jpg" class="image"><img src="images/L5-28.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Python common functions</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-29.jpg" class="image"><img src="images/L5-29.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Python common functions</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-30.jpg" class="image"><img src="images/L5-30.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Python common functions</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-31.jpg" class="image"><img src="images/L5-31.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Python common functions</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L5-32.jpg" class="image"><img src="images/L5-32.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Python common functions</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
 									</div>
 								</div>
 							</section>
@@ -110,6 +349,7 @@
 										<a href="Lecture6.html"> <li class="icon solid fa fa-file">Lecture 6 files and exceptions</li> </a>
 										<a href="Lecture7.html"> <li class="icon solid fa fa-users">Lecture 7  lists and tuples</li> </a>
 										<a href="Lecture8.html"> <li class="icon solid fa fa-bars">Lecture 8 dictionary and set</li> </a>
+										<a href="Lecture9.html"> <li class="icon solid fa fa-bars">Lecture 9 Pygame-Zero</li> </a>
 									</ul>
 								</div>
 							</section>
@@ -135,337 +375,6 @@
 									</form>
 								</div>
 							</section>
-
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
 
 					</div>
 
