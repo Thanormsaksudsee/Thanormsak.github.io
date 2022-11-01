@@ -76,259 +76,348 @@
 										<h3>FILES</h3>
 									<div class="features">
 										<article>
-											<a href="images/L5-1.jpg" class="image"><img src="images/L5-1.jpg" alt="" /></a>
+											<a href="images/L6-1.jpg" class="image"><img src="images/L6-1.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Introduction to Functions</h4>
-												<p>A function is a group of statements that exist within a
-													program for the purpose of performing a specific task.</p>
+												<h4>WRITE DATA TO FILE</h4>
+												<p>For program to retain data between the times it is run, you must save
+													the data
+													<br>Data is saved to a file, typically on computer disk
+													<br>Saved data can be retrieved and used at a later time
+													<br>• "Writing data to" : saving data on a file
+													<br>• Output file: a file that data is written to
+													<br>• "Reading data from" : process of retrieving data from a file		
+													<br>• Input file: a file from which data is read</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L5-2.jpg" class="image"><img src="images/L5-2.jpg" alt="" /></a>
+											<a href="images/L6-2.jpg" class="image"><img src="images/L6-2.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Introduction to Functions</h4>
-												<p>Functions
-													<br>• A function is a section of reusable code that performs an action.									
-													<br>• A function has a name and is called, or executed, by that name.													
-													<br>• Optionally, functions can accept arguments and return data.</p>
+												<h4>READ DATA FROM FILE</h4>
+												<p>In general, two types of files
+
+													<br>1. Text file: contains data that has been encoded as text
+													
+													<br>2. Binary file: contains data that has not been converted to text
+													
+													Two ways to access data stored in file
+													
+													<br>1. Sequential access: file read sequentially from beginning to end,
+													
+													can't skip ahead
+													
+													<br>2. Direct access: can jump directly to any piece of data in the file</p>
 											</div>
 										</article>
 										<article>
-										<h3>STRING RECAP</h3>
-											<a href="images/L5-3.jpg" class="image"><img src="images/L5-3.jpg" alt="" /></a>
+									
+											<a href="images/L6-3.jpg" class="image"><img src="images/L6-3.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FUNCTIONS</h4>
-												<p>ตัวอย่างการเขียน Function</p>
+												<h4>FILE</h4>
+												<p><br>There are always three steps that must be taken when a file is used by a
+
+													program.
+													
+													<br>• Open the file - Opening a file creates a connection between the file and the program.
+													
+													Opening an output file usually creates the file on the disk and allows the program to
+													
+													write data to it. Opening an input file allows the program to read data from the file.
+													
+													<br>• Process the file - In this step data is either written to the file (if it is an output file) or read
+													
+													from the file (if it is an input file).
+													
+													<br>• Close the file - When the program is finished using the file, the file must be closed.
+													
+													Closing a file disconnects the file from the program.</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L5-4.jpg" class="image"><img src="images/L5-4.jpg" alt="" /></a>
+											<a href="images/L6-4.jpg" class="image"><img src="images/L6-4.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FUNCTIONS NAMES</h4>
-												<p>Function naming rules:
-													<br>• ไม่สามารถใช้คำสำคัญเป็นชื่อฟังก์ชันได้											
-													<br>• ไม่สามารถมีช่องว่าง							
-													<br>• อักขระตัวแรกต้องเป็นตัวอักษรหรือขีดล่าง
-													<br>• อักขระอื่นๆ ทั้งหมดต้องเป็นตัวอักษร ตัวเลข หรือขีดล่าง
-													<br>• อักขระตัวพิมพ์ใหญ่และตัวพิมพ์เล็กต่างกัน</p>
+												<h4>FILE MODE</h4>
+												<p></p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L5-5.jpg" class="image"><img src="images/L5-5.jpg" alt="" /></a>
+											<a href="images/L6-5.jpg" class="image"><img src="images/L6-5.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FUNCTIONS</h4>
-												<p>ใน Python สตริงจะไม่เปลี่ยนรูป ซึ่งหมายความว่าเมื่อสร้างแล้ว
-													ไม่สามารถเปลี่ยนแปลงได้ การดำเนินการบางอย่าง เช่น การต่อกัน ให้
-													รู้สึกว่าพวกเขาแก้ไขสตริง แต่ในความเป็นจริงพวกเขาไม่ได้</p>
+												<h4>FILEWRITE.PY</h4>
+												<p>INPUT</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L5-6.jpg" class="image"><img src="images/L5-6.jpg" alt="" /></a>
+											<a href="images/L6-6.jpg" class="image"><img src="images/L6-6.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>BENEFITS OF MODULARISING A PROGRAM WITH FUNCTIONS</h4>
-												<p><br>• รหัสที่ง่ายกว่า: เข้าใจง่ายขึ้นเมื่อแบ่งออกเป็นฟังก์ชัน
-													<br>• Code Reuse: เขียนครั้งเดียวเพื่อดำเนินการนั้นแล้วดำเนินการใดๆ
-													เวลาที่จำเป็น
-													<br>• การทดสอบที่ดีขึ้น: สามารถทดสอบแต่ละฟังก์ชันในโปรแกรมทีละรายการ แก้ไขข้อผิดพลาดได้ง่ายขึ้น
-													<br>• การพัฒนาที่เร็วขึ้น: สามารถรวมไลบรารีของฟังก์ชันในแต่ละโปรแกรมได้
-													ที่ต้องการพวกเขา
-													<br>• อำนวยความสะดวกในการทำงานเป็นทีมได้ง่ายขึ้น : โปรแกรมเมอร์ต่างๆ สามารถมอบหมายงานได้
-													ในการเขียนหน้าที่ต่างๆ</p>
+												<h4>FILEWRITE.PY</h4>
+												<p>OUTPUT</p>
 											</div>
 										</article>
 										<article>
-											<h4>Designing Program Using Functions</h4>
-											<a href="images/L5-7.jpg" class="image"><img src="images/L5-7.jpg" alt="" /></a>
+									
+											<a href="images/L6-7.jpg" class="image"><img src="images/L6-7.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FUNCTIONS</h4>
+												<h4>READLINE.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-8.jpg" class="image"><img src="images/L6-8.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>READLINE.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-9.jpg" class="image"><img src="images/L6-9.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>STRIP_NEWLINE.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-10.jpg" class="image"><img src="images/L6-10.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>STRIP_NEWLINE.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-11.jpg" class="image"><img src="images/L6-11.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>WRITE_NAME.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-12.jpg" class="image"><img src="images/L6-12.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>WRITE_NAME.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+											
+											<a href="images/L6-13.jpg" class="image"><img src="images/L6-13.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>DETECTING END OF FILE</h4>
 												<p> </p>
 											</div>
-										</article>
-										<article>
-											<a href="images/L5-8.jpg" class="image"><img src="images/L5-8.jpg" alt="" /></a>
-											<div class="inner">
-												<h4> </h4>
-												<p> </p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L5-9.jpg" class="image"><img src="images/L5-9.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Passing Arguments to Functions</h4>
-												<p>A local variable is created inside a function and cannot be
-													accessed by statements that are outside the function. Different
-													functions can have local variables with the same names because
-													the functions cannot see each other's local variables.</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L5-10.jpg" class="image"><img src="images/L5-10.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>LOCAL VARIABLES</h4>
-												<p> </p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L5-11.jpg" class="image"><img src="images/L5-11.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>PASSING ARGUMENTS</h4>
-												<p>An argument is any piece of data that is passed into a function
-													when the function is called. A parameter is a variable that receives
-													an argument that is passed into a function.</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L5-12.jpg" class="image"><img src="images/L5-12.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>PASSING ARGUMENTS</h4>
-												<p> </p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L5-13.jpg" class="image"><img src="images/L5-13.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>PASSING ARGUMENTS</h4>
-												<p> </p>
-											</div>
 									</article>
 									<article>
-										<a href="images/L5-14.jpg" class="image"><img src="images/L5-14.jpg" alt="" /></a>
+										<a href="images/L6-14.jpg" class="image"><img src="images/L6-14.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>PASSING ARGUMENTS</h4>
+											<h4>WRITE_SALES.PYS</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
-										<h4>Local, Global Variables and Global Constants</h4>
-										<a href="images/L5-15.jpg" class="image"><img src="images/L5-15.jpg" alt="" /></a>
+									
+										<a href="images/L6-15.jpg" class="image"><img src="images/L6-15.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Global Variables and Global Constants</h4>
+											<h4>WRITE_SALES.PY</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-16.jpg" class="image"><img src="images/L5-16.jpg" alt="" /></a>
+										<a href="images/L6-16.jpg" class="image"><img src="images/L6-16.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Value-Returning Functions</h4>
-											<p>A value-returning function has a return statement that returns a
-												value back to the part of the program that called it.</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L5-17.jpg" class="image"><img src="images/L5-17.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>VALUE-RETURNING FUNCTIONS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L5-18.jpg" class="image"><img src="images/L5-18.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>IPO AND FUNCTION</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L5-19.jpg" class="image"><img src="images/L5-19.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>VALUE-RETURNING FUNCTIONS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L5-20.jpg" class="image"><img src="images/L5-20.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>VALUE-RETURNING FUNCTIONS()</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L5-21.jpg" class="image"><img src="images/L5-21.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>Storing Functions in Modules</h4>
-											<p>A module is a file that contains Python code. Large programs are
-												easier to debug and maintain when they are divided into modules.</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L5-22.jpg" class="image"><img src="images/L5-22.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STORING FUNCTIONS IN MODULES</h4>
+											<h4>WRITE_SALES.PY</h4>
 											<p></p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-23.jpg" class="image"><img src="images/L5-23.jpg" alt="" /></a>
+										<a href="images/L6-17.jpg" class="image"><img src="images/L6-17.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>USING MODULES</h4>
+											<h4>Processing Record</h4>
+											<p><br>• Record: set of data that describes one item
+
+												<br>• Field: single piece of data within a record
+												
+												<br>• Write record to sequential access file by writing the fields one
+												
+												after the other
+												
+												<br>• Read record from sequential access file by reading each field
+												
+												until record complete</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-18.jpg" class="image"><img src="images/L6-18.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>IPO AND FUNCTION</h4>
+											<p>When working with records, it is also important to be able to:
+
+												<br>• Add records
+												
+												<br>• Display records
+												
+												<br>• Search for a specific record
+												
+												<br>• Modify records
+												
+												<br>• Delete records</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-19.jpg" class="image"><img src="images/L6-19.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>SAVE_EMP_RECORDS.PY (WHILE LOOP)</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-24.jpg" class="image"><img src="images/L5-24.jpg" alt="" /></a>
+										<a href="images/L6-20.jpg" class="image"><img src="images/L6-20.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>USING MODULES</h4>
+											<h4>GROSS_PAY1.PY</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
-										<h4>BASIC STRING METHODS</h4>
-										<a href="images/L5-25.jpg" class="image"><img src="images/L5-25.jpg" alt="" /></a>
+										<a href="images/L6-21.jpg" class="image"><img src="images/L6-21.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>RUN</h4>
-											<p> </p>
+											<h4>EXCEPTION</h4>
+											<p><br>• Exception: error that occurs while a program is running
+
+												Usually causes program to abruptly halt
+												
+												<br>• Traceback: error message that gives information regarding
+												
+												line numbers that caused the exception
+												
+												Indicates the type of exception and brief description of the
+												
+												error that caused exception to be raisedException handler: code that responds when exceptions are raised and prevents
+
+												program from crashing
+												
+												<br>• In Python, written as try/except statement
+												
+												General format:
+												
+												try:
+												
+												statements
+												
+												except exceptionName:
+												
+												statements
+												
+												<br>• Try suite: statements that can potentially raise an exception
+												
+												<br>• Handler: statements contained in except block</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-26.jpg" class="image"><img src="images/L5-26.jpg" alt="" /></a>
+										<a href="images/L6-22.jpg" class="image"><img src="images/L6-22.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>RECURSIVE</h4>
-											<p> </p>
+											<h4>OUTPUT</h4>
+											<p></p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-27.jpg" class="image"><img src="images/L5-27.jpg" alt="" /></a>
+										<a href="images/L6-23.jpg" class="image"><img src="images/L6-23.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Python common functions</h4>
-											<p> </p>
+											<h4>EXCEPTION</h4>
+											<p>• Many exceptions can be prevented by careful coding
+
+												Example: input validation
+												
+												Usually involve a simple decision construct
+												
+												<br>• Some exceptions cannot be avoided by careful coding
+												
+												Examples
+												
+												Trying to convert non-numeric string to an integer
+												
+												Trying to open for reading a file that doesn't exist</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-28.jpg" class="image"><img src="images/L5-28.jpg" alt="" /></a>
+										<a href="images/L6-24.jpg" class="image"><img src="images/L6-24.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Python common functions</h4>
-											<p> </p>
+											<h4>EXCEPTION</h4>
+											<p><br>If statement in try suite raises exception:
+
+												Exception specified in except clause:
+												
+												Handler immediately following except clause executes
+												
+												Continue program after try/except statement
+												
+												Other exceptions:
+												
+												Program halts with traceback error message
+												
+												<br>• If no exception is raised, handlers are skipped</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-29.jpg" class="image"><img src="images/L5-29.jpg" alt="" /></a>
+										
+										<a href="images/L6-25.jpg" class="image"><img src="images/L6-25.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Python common functions</h4>
-											<p> </p>
+											<h4>HANDLING MULTIPLE EXCEPTIONS</h4>
+											<p><br>Often code in try suite can throw more than one type of
+
+												exception
+												
+												Need to write except clause for each type of exception that
+												
+												needs to be handled
+												
+												<br>• An except clause that does not list a specific exception will
+												
+												handle any exception that is raised in the try suite
+												
+												Should always be last in a series of except clauses</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-30.jpg" class="image"><img src="images/L5-30.jpg" alt="" /></a>
+										<a href="images/L6-26.jpg" class="image"><img src="images/L6-26.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Python common functions</h4>
-											<p> </p>
+											<h4>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h4>
+											<p><br>Exception object: object created in memory when an exception is
+
+												thrown
+												
+												<br>Usually contains default error message pertaining to the exception
+												
+												Can assign the exception object to a variable in an except clause
+												
+												<br>Example: except ValueError as err:
+												
+												Can pass exception object variable to print function to display
+												
+												the default error message</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-31.jpg" class="image"><img src="images/L5-31.jpg" alt="" /></a>
+										<a href="images/L6-27.jpg" class="image"><img src="images/L6-27.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>Python common functions</h4>
-											<p> </p>
+											<h4>THE FINALLY CLAUSE</h4>
+											<p><br>• try/except statement may include an optional finally clause, which appears after all
+
+												the except clauses
+												
+												Aligned with try and except clauses
+												
+												General format:
+												
+												finally:
+												
+												statements
+												
+												<br>Finally suite: block of statements after the finally clause
+												
+												Execute whether an exception occurs or not
+												
+												Purpose is to perform cleanup before exiting</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L5-32.jpg" class="image"><img src="images/L5-32.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>Python common functions</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
+										
 									</div>
 								</div>
 							</section>
