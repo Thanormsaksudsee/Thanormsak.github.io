@@ -54,12 +54,10 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Python เบื้องต้น</h2>
-										<p><font size = "5" face = "MNNEasyread">เป็นภาษาที่ง่าย เหมาะแก่ผู้ที่เพิ่งเริ่มต้นการเขียนโปรแกรมเบื้องต้น 
-											โดยข้อมูลทั้งหมดต้องขอขอบคุณ <a href="https://scholar.google.co.th/citations?user=htY3F_IAAAAJ&hl=en">
-												อาจารย์ อนิราช มิ่งขวัญ</a></font>		
+										<h2>Lecture 8 dictionary and set</h2>
+										<p><font size = "5" face = "MNNEasyread">โปรแกรมเมอร์ที่ดีส่วนใหญ่เขียนโปรแกรมไม่ใช่เพราะพวกเขาคาดหวังว่าจะได้รับเงินหรือได้รับการเย้ยหยันจากสาธารณชน แต่เพราะเป็นโปรแกรมที่สนุก</font>		
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p></p>
 								</div>
 							</section>
 
@@ -68,30 +66,357 @@
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h3>TIIPS AND TRICKS</h3>
+									<p>What You Will Learn
+										<br>- Dictionaries
+										<br>- Sets
+										<br>- Serialising Objects
+
+										<h3>DICTIONARIES</h3>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="images/L6-1.jpg" class="image"><img src="images/L6-1.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>DICTIONARIES</h4>
+												<p>For program to retain data between the times it is run, you must save
+													the data
+													<br>Data is saved to a file, typically on computer disk
+													<br>Saved data can be retrieved and used at a later time
+													<br>• "Writing data to" : saving data on a file
+													<br>• Output file: a file that data is written to
+													<br>• "Reading data from" : process of retrieving data from a file		
+													<br>• Input file: a file from which data is read</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="images/L6-2.jpg" class="image"><img src="images/L6-2.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>READ DATA FROM FILE</h4>
+												<p>In general, two types of files
+
+													<br>1. Text file: contains data that has been encoded as text
+													
+													<br>2. Binary file: contains data that has not been converted to text
+													
+													Two ways to access data stored in file
+													
+													<br>1. Sequential access: file read sequentially from beginning to end,
+													
+													can't skip ahead
+													
+													<br>2. Direct access: can jump directly to any piece of data in the file</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									
+											<a href="images/L6-3.jpg" class="image"><img src="images/L6-3.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>FILE</h4>
+												<p><br>There are always three steps that must be taken when a file is used by a
+
+													program.
+													
+													<br>• Open the file - Opening a file creates a connection between the file and the program.
+													
+													Opening an output file usually creates the file on the disk and allows the program to
+													
+													write data to it. Opening an input file allows the program to read data from the file.
+													
+													<br>• Process the file - In this step data is either written to the file (if it is an output file) or read
+													
+													from the file (if it is an input file).
+													
+													<br>• Close the file - When the program is finished using the file, the file must be closed.
+													
+													Closing a file disconnects the file from the program.</p>
 											</div>
 										</article>
+										<article>
+											<a href="images/L6-4.jpg" class="image"><img src="images/L6-4.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>FILE MODE</h4>
+												<p></p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-5.jpg" class="image"><img src="images/L6-5.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>FILEWRITE.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-6.jpg" class="image"><img src="images/L6-6.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>FILEWRITE.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+									
+											<a href="images/L6-7.jpg" class="image"><img src="images/L6-7.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>READLINE.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-8.jpg" class="image"><img src="images/L6-8.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>READLINE.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-9.jpg" class="image"><img src="images/L6-9.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>STRIP_NEWLINE.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-10.jpg" class="image"><img src="images/L6-10.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>STRIP_NEWLINE.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-11.jpg" class="image"><img src="images/L6-11.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>WRITE_NAME.PY</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L6-12.jpg" class="image"><img src="images/L6-12.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>WRITE_NAME.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+											
+											<a href="images/L6-13.jpg" class="image"><img src="images/L6-13.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>DETECTING END OF FILE</h4>
+												<p> </p>
+											</div>
+									</article>
+									<article>
+										<a href="images/L6-14.jpg" class="image"><img src="images/L6-14.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>WRITE_SALES.PYS</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+									
+										<a href="images/L6-15.jpg" class="image"><img src="images/L6-15.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>WRITE_SALES.PY</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-16.jpg" class="image"><img src="images/L6-16.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>WRITE_SALES.PY</h4>
+											<p></p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-17.jpg" class="image"><img src="images/L6-17.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Processing Record</h4>
+											<p><br>• Record: set of data that describes one item
+
+												<br>• Field: single piece of data within a record
+												
+												<br>• Write record to sequential access file by writing the fields one
+												
+												after the other
+												
+												<br>• Read record from sequential access file by reading each field
+												
+												until record complete</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-18.jpg" class="image"><img src="images/L6-18.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>IPO AND FUNCTION</h4>
+											<p>When working with records, it is also important to be able to:
+
+												<br>• Add records
+												
+												<br>• Display records
+												
+												<br>• Search for a specific record
+												
+												<br>• Modify records
+												
+												<br>• Delete records</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-19.jpg" class="image"><img src="images/L6-19.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>SAVE_EMP_RECORDS.PY (WHILE LOOP)</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-20.jpg" class="image"><img src="images/L6-20.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>GROSS_PAY1.PY</h4>
+											<p> </p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-21.jpg" class="image"><img src="images/L6-21.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>EXCEPTION</h4>
+											<p><br>• Exception: error that occurs while a program is running
+
+												Usually causes program to abruptly halt
+												
+												<br>• Traceback: error message that gives information regarding
+												
+												line numbers that caused the exception
+												
+												Indicates the type of exception and brief description of the
+												
+												error that caused exception to be raisedException handler: code that responds when exceptions are raised and prevents
+
+												program from crashing
+												
+												<br>• In Python, written as try/except statement
+												
+												General format:
+												
+												try:
+												
+												statements
+												
+												except exceptionName:
+												
+												statements
+												
+												<br>• Try suite: statements that can potentially raise an exception
+												
+												<br>• Handler: statements contained in except block</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-22.jpg" class="image"><img src="images/L6-22.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>OUTPUT</h4>
+											<p></p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-23.jpg" class="image"><img src="images/L6-23.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>EXCEPTION</h4>
+											<p>• Many exceptions can be prevented by careful coding
+
+												Example: input validation
+												
+												Usually involve a simple decision construct
+												
+												<br>• Some exceptions cannot be avoided by careful coding
+												
+												Examples
+												
+												Trying to convert non-numeric string to an integer
+												
+												Trying to open for reading a file that doesn't exist</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-24.jpg" class="image"><img src="images/L6-24.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>EXCEPTION</h4>
+											<p><br>If statement in try suite raises exception:
+
+												Exception specified in except clause:
+												
+												Handler immediately following except clause executes
+												
+												Continue program after try/except statement
+												
+												Other exceptions:
+												
+												Program halts with traceback error message
+												
+												<br>• If no exception is raised, handlers are skipped</p>
+										</div>
+									</article>
+									<article>
+										
+										<a href="images/L6-25.jpg" class="image"><img src="images/L6-25.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>HANDLING MULTIPLE EXCEPTIONS</h4>
+											<p><br>Often code in try suite can throw more than one type of
+
+												exception
+												
+												Need to write except clause for each type of exception that
+												
+												needs to be handled
+												
+												<br>• An except clause that does not list a specific exception will
+												
+												handle any exception that is raised in the try suite
+												
+												Should always be last in a series of except clauses</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-26.jpg" class="image"><img src="images/L6-26.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h4>
+											<p><br>Exception object: object created in memory when an exception is
+
+												thrown
+												
+												<br>Usually contains default error message pertaining to the exception
+												
+												Can assign the exception object to a variable in an except clause
+												
+												<br>Example: except ValueError as err:
+												
+												Can pass exception object variable to print function to display
+												
+												the default error message</p>
+										</div>
+									</article>
+									<article>
+										<a href="images/L6-27.jpg" class="image"><img src="images/L6-27.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>THE FINALLY CLAUSE</h4>
+											<p><br>• try/except statement may include an optional finally clause, which appears after all
+
+												the except clauses
+												
+												Aligned with try and except clauses
+												
+												General format:
+												
+												finally:
+												
+												statements
+												
+												<br>Finally suite: block of statements after the finally clause
+												
+												Execute whether an exception occurs or not
+												
+												Purpose is to perform cleanup before exiting</p>
+										</div>
+									</article>
+									<article>
+										
 									</div>
 								</div>
 							</section>
@@ -136,337 +461,6 @@
 									</form>
 								</div>
 							</section>
-
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
 
 					</div>
 
