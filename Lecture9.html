@@ -54,8 +54,8 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Lecture 4  String</h2>
-										<p><font size = "5" face = "MNNEasyread">เราไม่สามารถแก้ปัญหาโดยใช้แนวคิดแบบเดิมๆที่เราใช้การสร้างปัญหานั้นขึ้นมา</font>		
+										<h2>Lecture 9 Pygame-Zero</h2>
+										<p><font size = "5" face = "MNNEasyread">- pip3 install pgzero</font>		
 									</header>
 									<p></p>
 								</div>
@@ -68,315 +68,126 @@
 								<div class="container">
 									<h3>TIIPS AND TRICKS</h3>
 									<p>What You Will Learn
-										<br>-Strings
-										<br>-String indexing 
-										<br>-String slicing
-										<br>-String formatting
-										<br>-len(), string()
-										<br>-String Methods
-										<br>-String Boolean Methods</p>
-										<h3>Multiple input()</h3>
+										<br>- Installation
+										<br>- First Program with Pygame-Zero
+										<br>- Hello world
+										<br>- Shoot the fruit
+										<br>- Coin collection
+										<br>- Project
+
+										<h3>FILES</h3>
 									<div class="features">
 										<article>
-											<a href="images/L4-1.jpg" class="image"><img src="images/L4-1.jpg" alt="" /></a>
+											<a href="images/L9-1.jpg" class="image"><img src="images/L9-1.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>MULTIPLE INPUT WITH MAP FUNCTION</h4>
-												<p>Coding</p>
+												<h4>PYGAME-ZERO</h4>
+												<p>PGHELLO.PY</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L4-2.jpg" class="image"><img src="images/L4-2.jpg" alt="" /></a>
+											<a href="images/L9-2.jpg" class="image"><img src="images/L9-2.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>MULTIPLE INPUT WITH MAP FUNCTION</h4>
-												<p>Output</p>
+												<h4>PYGAME-ZERO</h4>
+												<p>PGHELLO.PY</p>
 											</div>
 										</article>
 										<article>
-										<h3>STRING RECAP</h3>
-											<a href="images/L4-3.jpg" class="image"><img src="images/L4-3.jpg" alt="" /></a>
+									
+											<a href="images/L9-3.jpg" class="image"><img src="images/L9-3.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>STRING</h4>
-												<p>* สตริงขึ้นต้นด้วย ' or" และลงท้ายด้วย ' or "</p>
+												<h4>FRUIT.PY(STEP 1)</h4>
+												<p></p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L4-4.jpg" class="image"><img src="images/L4-4.jpg" alt="" /></a>
+											<a href="images/L9-4.jpg" class="image"><img src="images/L9-4.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>STRING AND PRINTING</h4>
-												<p>สตริงและการพิมพ์</p>
+												<h4>FRUIT.PY(STEP 2)</h4>
+												<p></p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L4-5.jpg" class="image"><img src="images/L4-5.jpg" alt="" /></a>
+											<a href="images/L9-5.jpg" class="image"><img src="images/L9-5.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>STRING ARE IMMUTABLE</h4>
-												<p>ใน Python สตริงจะไม่เปลี่ยนรูป ซึ่งหมายความว่าเมื่อสร้างแล้ว
-													ไม่สามารถเปลี่ยนแปลงได้ การดำเนินการบางอย่าง เช่น การต่อกัน ให้
-													รู้สึกว่าพวกเขาแก้ไขสตริง แต่ในความเป็นจริงพวกเขาไม่ได้</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L4-6.jpg" class="image"><img src="images/L4-6.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>STRING INDEXING</h4>
-												<p>ใน Python สตริงจะไม่เปลี่ยนรูป ซึ่งหมายความว่าเมื่อสร้างแล้ว ไม่สามารถเปลี่ยนแปลงได้ การดำเนินการบางอย่าง เช่น การต่อกัน ให้ รู้สึกว่าพวกเขาแก้ไขสตริง แต่ในความเป็นจริงพวกเขาไม่ได้</p>
-											</div>
-										</article>
-										<article>
-											<h4>STRING SLICING</h4>
-											<a href="images/L4-7.jpg" class="image"><img src="images/L4-7.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>STRING SLICING EXAMPLE</h4>
-												<p>ss = 'Sammy Shark!'</p>
-											</div>
-										</article>
-										<article>
-											<h4>STRING SLICING</h4>
-											<a href="images/L4-8.jpg" class="image"><img src="images/L4-8.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>print(ss[0:12:2])</h4>
-												<p>ss[Start:Stop:Stride]
-
-													Begin End
-													
-													How many character to move forward
-													
-													Sammy Shark!</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L4-9.jpg" class="image"><img src="images/L4-9.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>EXERCISE</h4>
-												<p>First = str(input('Enter your first name: '))
-													Last = str(input('Enter your lasst name: '))
-													ID = (input('Enter your student ID number: '))
-													total = First[:3]+Last[:3]+ID[-3:]
-													print('You system login name is: ',total)
-													print('You system login name is: ',First[:3]+Last[:3]+ID[-3:]).</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L4-10.jpg" class="image"><img src="images/L4-10.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>len()</h4>
-												<p>The len() Function</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L4-11.jpg" class="image"><img src="images/L4-11.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>LENGTH FUNCTION</h4>
-												<p>Nesting Function</p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L4-12.jpg" class="image"><img src="images/L4-12.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>LENGTH FUNCTION</h4>
+												<h4>FRUIT.PY(STEP 3)</h4>
 												<p> </p>
 											</div>
 										</article>
 										<article>
-											<h4>BASIC STRING METHODS</h4>
-											<p>• Everything in Python is an object.
-												<br>• Every object has a type.							
-												<br>• 'apple' is an object of type "str".									
-												<br>• 'apple' is a string object.																								<br>• Fruit = 'apple'.										
-												<br>fruit is a string object.
-												<br>• Methods are fuctions run against an object.
-												<br>object.method()</p>
-											<a href="images/L4-13.jpg" class="image"><img src="images/L4-13.jpg" alt="" /></a>
+											<a href="images/L9-6.jpg" class="image"><img src="images/L9-6.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>The lower() String Method</h4>
-												<p>lower() : Returns a copy of the string in lowercase.  </p>
+												<h4>FRUIT.PY</h4>
+												<p>OUTPUT</p>
+											</div>
+										</article>
+										<article>
+									
+											<a href="images/L9-7.jpg" class="image"><img src="images/L9-7.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 1)</h4>
+												<p>INPUT</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L9-8.jpg" class="image"><img src="images/L9-8.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 2: RANDOM COIN POSITION)</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L9-9.jpg" class="image"><img src="images/L9-9.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 3: MOVE FOX)</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L9-10.jpg" class="image"><img src="images/L9-10.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 4: CHECK COLLISION )</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L9-11.jpg" class="image"><img src="images/L9-11.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 5: SHOW SCORE)</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L9-12.jpg" class="image"><img src="images/L9-12.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 6: COUNT SCORE)</h4>
+												<p> </p>
+											</div>
+										</article>
+										<article>
+											
+											<a href="images/L9-13.jpg" class="image"><img src="images/L9-13.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>COINS.PY (STEP 7: TIME UP)</h4>
+												<p> </p>
 											</div>
 									</article>
 									<article>
-										<a href="images/L4-14.jpg" class="image"><img src="images/L4-14.jpg" alt="" /></a>
+										<a href="images/L9-14.jpg" class="image"><img src="images/L9-14.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>The upper() String Method</h4>
-											<p>upper() : Returns a copy of the string in uppercase.</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-15.jpg" class="image"><img src="images/L4-15.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>EXAMPLE</h4>
+											<h4>COINS.PY (STEP 8: COUNT SCORE)</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L4-16.jpg" class="image"><img src="images/L4-16.jpg" alt="" /></a>
+									
+										<a href="images/L9-15.jpg" class="image"><img src="images/L9-15.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>String Concatenation</h4>
+											<h4>COINS.PY</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L4-17.jpg" class="image"><img src="images/L4-17.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING CONCATENATION</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-18.jpg" class="image"><img src="images/L4-18.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING REPETITION OPERATOR</h4>
-											<p>Repeating String</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-19.jpg" class="image"><img src="images/L4-19.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING USING STRING()</h4>
-											<p>The str() Function</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-20.jpg" class="image"><img src="images/L4-20.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING USING STRING()</h4>
-											<p>The str() Function</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-21.jpg" class="image"><img src="images/L4-21.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>FORMATTING STRING</h4>
-											<p>Formatting Strings</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-22.jpg" class="image"><img src="images/L4-22.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>FORMATTING STRING</h4>
-											<p>Formatting Strings</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-23.jpg" class="image"><img src="images/L4-23.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>FORMATTING STRING</h4>
-											<p>Formatting Strings</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-24.jpg" class="image"><img src="images/L4-24.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>FORMATTING STRING</h4>
-											<p>Formatting Strings</p>
-										</div>
-									</article>
-									<article>
-										<h4>BASIC STRING METHODS</h4>
-										<a href="images/L4-25.jpg" class="image"><img src="images/L4-25.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-26.jpg" class="image"><img src="images/L4-26.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-27.jpg" class="image"><img src="images/L4-27.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-28.jpg" class="image"><img src="images/L4-28.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-29.jpg" class="image"><img src="images/L4-29.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-30.jpg" class="image"><img src="images/L4-30.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>SEARCH AND REPLACE METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-31.jpg" class="image"><img src="images/L4-31.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-32.jpg" class="image"><img src="images/L4-32.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-33.jpg" class="image"><img src="images/L4-33.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-34.jpg" class="image"><img src="images/L4-34.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>BASIC STRING METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<h4>Boolean test</h4>
-										<a href="images/L4-35.jpg" class="image"><img src="images/L4-35.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING BOOLEAN METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-36.jpg" class="image"><img src="images/L4-36.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING BOOLEAN METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-37.jpg" class="image"><img src="images/L4-37.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING BOOLEAN METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-38.jpg" class="image"><img src="images/L4-38.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>STRING BOOLEAN METHODS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L4-39g" class="image"><img src="images/L4-39.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>EXAM HINTS</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
+										
 									</div>
 								</div>
 							</section>

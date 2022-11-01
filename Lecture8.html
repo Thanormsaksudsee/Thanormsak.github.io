@@ -75,348 +75,286 @@
 										<h3>DICTIONARIES</h3>
 									<div class="features">
 										<article>
-											<a href="images/L6-1.jpg" class="image"><img src="images/L6-1.jpg" alt="" /></a>
+											<a href="images/L0-7.png" class="image"><img src="images/L0-7.png" alt="" /></a>
 											<div class="inner">
 												<h4>DICTIONARIES</h4>
-												<p>For program to retain data between the times it is run, you must save
-													the data
-													<br>Data is saved to a file, typically on computer disk
-													<br>Saved data can be retrieved and used at a later time
-													<br>• "Writing data to" : saving data on a file
-													<br>• Output file: a file that data is written to
-													<br>• "Reading data from" : process of retrieving data from a file		
-													<br>• Input file: a file from which data is read</p>
+												<p>• Dictionary: object that stores a collection of data
+
+													Each element consists of a key and a value
+													
+													Often referred to as mapping of key to value
+													
+													Key must be an immutable object
+													
+													To retrieve a specific value, use the key associated with it
+													
+													Format for creating a dictionary
+													
+													dictionary = {key1:val1, key2:val2}</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-2.jpg" class="image"><img src="images/L6-2.jpg" alt="" /></a>
+											<a href="images/L0-7.png" class="image"><img src="images/L0-7.png" alt="" /></a>
 											<div class="inner">
-												<h4>READ DATA FROM FILE</h4>
-												<p>In general, two types of files
+												<h4>ADD AND DELETE DICTIONARY</h4>
+												<p>• Dictionaries are mutable objects
 
-													<br>1. Text file: contains data that has been encoded as text
+													• To add a new key-value pair: dictionary[key] = value
 													
-													<br>2. Binary file: contains data that has not been converted to text
+													If key exists in the dictionary, the value associated
 													
-													Two ways to access data stored in file
+													with it will be changed
 													
-													<br>1. Sequential access: file read sequentially from beginning to end,
+													• To delete a key-value pair: del dictionary[key]
 													
-													can't skip ahead
+													If key is not in the dictionary, KeyError exception is
 													
-													<br>2. Direct access: can jump directly to any piece of data in the file</p>
+													raised</p>
 											</div>
 										</article>
 										<article>
 									
-											<a href="images/L6-3.jpg" class="image"><img src="images/L6-3.jpg" alt="" /></a>
+											<a href="images/L8-3.jpg" class="image"><img src="images/L8-3.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FILE</h4>
-												<p><br>There are always three steps that must be taken when a file is used by a
+												<h4>INTRODICT.PY</h4>
+												<p>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES.</p>
+											</div>
+										</article>
+										<article>
+											<a href="images/L0-7.png" class="image"><img src="images/L0-7.png" alt="" /></a>
+											<div class="inner">
+												<h4>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</h4>
+												<p>• len function: used to obtain number of elements in a
 
-													program.
+													dictionary
 													
-													<br>• Open the file - Opening a file creates a connection between the file and the program.
+													• Keys must be immutable objects, but associated
 													
-													Opening an output file usually creates the file on the disk and allows the program to
+													values can be any type of object
 													
-													write data to it. Opening an input file allows the program to read data from the file.
+													One dictionary can include keys of several different
+													immutable types
 													
-													<br>• Process the file - In this step data is either written to the file (if it is an output file) or read
+													• Values stored in a single dictionary can be of different
 													
-													from the file (if it is an input file).
-													
-													<br>• Close the file - When the program is finished using the file, the file must be closed.
-													
-													Closing a file disconnects the file from the program.</p>
+													types</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-4.jpg" class="image"><img src="images/L6-4.jpg" alt="" /></a>
+											<a href="images/L8-5.jpg" class="image"><img src="images/L8-5.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FILE MODE</h4>
-												<p></p>
-											</div>
-										</article>
-										<article>
-											<a href="images/L6-5.jpg" class="image"><img src="images/L6-5.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>FILEWRITE.PY</h4>
-												<p>INPUT</p>
+												<h4>CREATING AN EMPTY DICTIONARY AND USING FOR LOOP</h4>
+												<p>To create an empty dictionary:
+
+													Use {}
+													
+													Use built-in function dict()
+													
+													Elements can be added to the dictionary as program
+													executes
+													
+													• Use a for loop to iterate over a dictionary
+													
+													General format: for key in dictionary:
+													
+													for key in dictionary:</p>
 											</div>
 										</article>
 										<article>
 											<a href="images/L6-6.jpg" class="image"><img src="images/L6-6.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>FILEWRITE.PY</h4>
-												<p>OUTPUT</p>
+												<h4>SOME DICTIONARY METHODSY</h4>
+												<p> </p>
 											</div>
 										</article>
 										<article>
 									
-											<a href="images/L6-7.jpg" class="image"><img src="images/L6-7.jpg" alt="" /></a>
+											<a href="images/L8-7.jpg" class="image"><img src="images/L8-7.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>READLINE.PY</h4>
-												<p>INPUT</p>
+												<h4>READLINE.PYDICTMETHODS.PYNPUT</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-8.jpg" class="image"><img src="images/L6-8.jpg" alt="" /></a>
+											<a href="images/L8-8.jpg" class="image"><img src="images/L8-8.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>READLINE.PY</h4>
-												<p>OUTPUT</p>
+												<h4>DICTIONARY EXERCISES</h4>
+												<p>https://holypython.com/beginner-python-exercises/exercise-8-python-dictionaries/</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-9.jpg" class="image"><img src="images/L6-9.jpg" alt="" /></a>
+
 											<div class="inner">
-												<h4>STRIP_NEWLINE.PY</h4>
-												<p>INPUT</p>
+												<h4>Set Methods and Useful Built-in Functions</h4>
+												<p>• Set: object that stores a collection of data in same
+
+													way as mathematical set
+													
+													All items must be unique
+													
+													Set is unordered
+													
+													Elements can be of different data types• len function: returns the number of elements in the set
+
+													<br>• Sets are mutable objects
+													
+													<br>• add method: adds an element to a set
+													
+													<br>• update method: adds a group of elements to a set
+													
+													Argument must be a sequence containing iterable
+													elements, and each of the elements is added to the set<br>• remove and discard methods: remove the specified
+
+													item from the set
+													
+													The item that should be removed is passed to both methods as
+													an argument
+													
+													Behave differently when the specified item is not found in the set
+													
+													remove method raises a KeyError exception
+													
+													discard method does not raise an exception
+													
+													<br>• clear method: clears all the elements of the set</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-10.jpg" class="image"><img src="images/L6-10.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>STRIP_NEWLINE.PY</h4>
-												<p>OUTPUT</p>
+												<h4>FINDING THE UNION OF SETS</h4>
+												<p>• Union of two sets: a set that contains all the elements of both
+
+													sets
+													
+													<br>• To find the union of two sets:
+													
+													Use the union method
+													
+													Format: set1.union(set2)
+													
+													Use the | operator
+													
+													Format: set1 | set2
+													
+													Both techniques return a new set which contains the union of both
+													sets• Intersection of two sets: a set that contains only the elements
+
+													found in both sets
+													
+													<br>• To find the intersection of two sets:
+													
+													Use the intersection method
+													
+													Format: set1.intersection(set2)
+													
+													Use the & operator
+													
+													Format: set1 & set2
+													
+													Both techniques return a new set which contains the intersection of
+													both sets• Symmetric difference of two sets: a set that contains
+
+													the elements that are not shared by the two sets
+													
+													<br>• To find the symmetric difference of two sets:
+													
+													Use the symmetric_difference method
+													
+													Format: set1.symmetric_difference(set2)
+													
+													Use the ^ operator
+													
+													Format: set1 ^ set2• Set A is subset of set B if all the elements in set A are
+
+													included in set B
+													
+													<br>• To determine whether set A is subset of set B
+													
+													Use the issubset method
+													
+													Format: setA.issubset(setB)
+													
+													Use the <= operator
+													
+													Format: setA <= setB• Set A is superset of set B if it contains all the elements of
+
+													set B
+													
+													<br>• To determine whether set A is superset of set B
+													
+													Use the issuperset method
+													
+													Format: setA.issuperset(setB)
+													
+													Use the >= operator
+													
+													Format: setA >= setB</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-11.jpg" class="image"><img src="images/L6-11.jpg" alt="" /></a>
+											<a href="images/L8-11.jpg" class="image"><img src="images/L8-11.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>WRITE_NAME.PY</h4>
-												<p>INPUT</p>
+												<h4>SETINTRO.PY</h4>
+												<p>INPUT OUTPUT</p>
 											</div>
 										</article>
 										<article>
-											<a href="images/L6-12.jpg" class="image"><img src="images/L6-12.jpg" alt="" /></a>
+											<a href="images/8-12.jpg" class="image"><img src="images/L8-12.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>WRITE_NAME.PY</h4>
+												<h4>SET OPERATION</h4>
 												<p>OUTPUT</p>
 											</div>
 										</article>
 										<article>
 											
-											<a href="images/L6-13.jpg" class="image"><img src="images/L6-13.jpg" alt="" /></a>
+											<a href="images/L8-13.jpg" class="image"><img src="images/L8-13.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>DETECTING END OF FILE</h4>
-												<p> </p>
+												<h4>SERIALIZING OBJECTS</h4>
+												<p>Serialize an object: convert the object to a stream of
+
+													bytes that can easily be stored in a file
+													
+													• Pickling: serializing an object</p>
 											</div>
 									</article>
 									<article>
-										<a href="images/L6-14.jpg" class="image"><img src="images/L6-14.jpg" alt="" /></a>
+										<a href="images/L8-14.jpg" class="image"><img src="images/L8-14.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>WRITE_SALES.PYS</h4>
+											<h4>PICKLE_OBJECTS.PY</h4>
 											<p> </p>
 										</div>
 									</article>
 									<article>
 									
-										<a href="images/L6-15.jpg" class="image"><img src="images/L6-15.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>WRITE_SALES.PY</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-16.jpg" class="image"><img src="images/L6-16.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>WRITE_SALES.PY</h4>
-											<p></p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-17.jpg" class="image"><img src="images/L6-17.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>Processing Record</h4>
-											<p><br>• Record: set of data that describes one item
-
-												<br>• Field: single piece of data within a record
-												
-												<br>• Write record to sequential access file by writing the fields one
-												
-												after the other
-												
-												<br>• Read record from sequential access file by reading each field
-												
-												until record complete</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-18.jpg" class="image"><img src="images/L6-18.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>IPO AND FUNCTION</h4>
-											<p>When working with records, it is also important to be able to:
-
-												<br>• Add records
-												
-												<br>• Display records
-												
-												<br>• Search for a specific record
-												
-												<br>• Modify records
-												
-												<br>• Delete records</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-19.jpg" class="image"><img src="images/L6-19.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>SAVE_EMP_RECORDS.PY (WHILE LOOP)</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-20.jpg" class="image"><img src="images/L6-20.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>GROSS_PAY1.PY</h4>
-											<p> </p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-21.jpg" class="image"><img src="images/L6-21.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>EXCEPTION</h4>
-											<p><br>• Exception: error that occurs while a program is running
-
-												Usually causes program to abruptly halt
-												
-												<br>• Traceback: error message that gives information regarding
-												
-												line numbers that caused the exception
-												
-												Indicates the type of exception and brief description of the
-												
-												error that caused exception to be raisedException handler: code that responds when exceptions are raised and prevents
-
-												program from crashing
-												
-												<br>• In Python, written as try/except statement
-												
-												General format:
-												
-												try:
-												
-												statements
-												
-												except exceptionName:
-												
-												statements
-												
-												<br>• Try suite: statements that can potentially raise an exception
-												
-												<br>• Handler: statements contained in except block</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-22.jpg" class="image"><img src="images/L6-22.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>OUTPUT</h4>
-											<p></p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-23.jpg" class="image"><img src="images/L6-23.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>EXCEPTION</h4>
-											<p>• Many exceptions can be prevented by careful coding
-
-												Example: input validation
-												
-												Usually involve a simple decision construct
-												
-												<br>• Some exceptions cannot be avoided by careful coding
-												
-												Examples
-												
-												Trying to convert non-numeric string to an integer
-												
-												Trying to open for reading a file that doesn't exist</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-24.jpg" class="image"><img src="images/L6-24.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>EXCEPTION</h4>
-											<p><br>If statement in try suite raises exception:
-
-												Exception specified in except clause:
-												
-												Handler immediately following except clause executes
-												
-												Continue program after try/except statement
-												
-												Other exceptions:
-												
-												Program halts with traceback error message
-												
-												<br>• If no exception is raised, handlers are skipped</p>
-										</div>
-									</article>
-									<article>
 										
-										<a href="images/L6-25.jpg" class="image"><img src="images/L6-25.jpg" alt="" /></a>
 										<div class="inner">
-											<h4>HANDLING MULTIPLE EXCEPTIONS</h4>
-											<p><br>Often code in try suite can throw more than one type of
+											<h4>SUMMARY</h4>
+											<p><br>Dictionaries, including:
 
-												exception
+												Creating dictionaries
 												
-												Need to write except clause for each type of exception that
+												Inserting, retrieving, adding, and deleting key-value pairs
 												
-												needs to be handled
+												for loops and in and not in operators
 												
-												<br>• An except clause that does not list a specific exception will
+												Dictionary methods
 												
-												handle any exception that is raised in the try suite
+												<br>Sets:
 												
-												Should always be last in a series of except clauses</p>
+												Creating sets
+												
+												Adding elements to and removing elements from sets
+												
+												Finding set union, intersection, difference and symmetric difference
+												
+												Finding subsets and supersets
+												
+												<br>Serializing objects
+												
+												Pickling and unpickling objects</p>
 										</div>
 									</article>
 									<article>
-										<a href="images/L6-26.jpg" class="image"><img src="images/L6-26.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h4>
-											<p><br>Exception object: object created in memory when an exception is
-
-												thrown
-												
-												<br>Usually contains default error message pertaining to the exception
-												
-												Can assign the exception object to a variable in an except clause
-												
-												<br>Example: except ValueError as err:
-												
-												Can pass exception object variable to print function to display
-												
-												the default error message</p>
-										</div>
-									</article>
-									<article>
-										<a href="images/L6-27.jpg" class="image"><img src="images/L6-27.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>THE FINALLY CLAUSE</h4>
-											<p><br>• try/except statement may include an optional finally clause, which appears after all
-
-												the except clauses
-												
-												Aligned with try and except clauses
-												
-												General format:
-												
-												finally:
-												
-												statements
-												
-												<br>Finally suite: block of statements after the finally clause
-												
-												Execute whether an exception occurs or not
-												
-												Purpose is to perform cleanup before exiting</p>
-										</div>
-									</article>
-									<article>
-										
+									
 									</div>
 								</div>
 							</section>
